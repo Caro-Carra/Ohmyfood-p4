@@ -1,0 +1,402 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+
+
+:root{
+    --color-primary: #9356DC;
+    --color-secondaru:#FF79DA;
+    --color-tertiary:#99E2D0;
+}
+
+body{
+    background: #FFFFFF;
+    height: 1460px;
+}
+
+
+.titre{
+    width: 100%;
+    height: 63px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.titre img{
+    position: absolute;
+    left: 90px;
+    top: 19px;
+  
+}
+/* Header */
+
+.retour{
+    position: absolute;
+    top: 25px;
+    left: 23px;
+}
+
+.fa-solid {
+    color: #353535;
+}
+
+/* Introduction photo*/
+
+header{
+    background-image: url(Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 400;
+    height: 275px;
+    width: 375px;
+}
+
+
+.Menu{
+    padding-left: 13px;
+    background-color: #F7F7F7;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 1173px;
+    width: 100%;
+    margin-top: -56px;
+}
+
+.fa-regular {
+    color: #101010;
+    font-size: 0.6em;
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+}
+
+.Menu h2{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    color: #101010;
+    padding-top: 32px;
+    padding-bottom: 42px;
+}
+
+.Menu .container h5{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--color-tertiary);
+    width: 40px;
+   
+}
+
+.cards-txt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 69px;
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    margin-bottom: 40px;
+    padding-right: 13px;
+}
+
+.cards-txt .card-title{
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 12px;
+}
+
+.cards-txt .card-subtile{
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 14px;
+}
+
+.container .cards-txt .card-subtile span{
+    color: #353535;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.cta {
+    color:#FFFFFF;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 50px;
+    background:linear-gradient( #FF79DA, #9356DC);
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 82px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,25);
+}
+
+/*Section Footer */
+
+.footer{
+    height: 214px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+}
+
+.details h4 , li{
+    color:#FFFFFF
+}
+
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.details{
+    display: flex;
+    padding-bottom: 18px;
+    font-family : 'Shrikhand';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer .details h4{
+    padding-left: 25px;
+    padding-top: 22px;
+}
+
+.services, .politique{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .details{
+display: flex;
+}
+
+.footer ul > li{
+    padding-bottom: 7px;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+   font-style: normal;
+}
+
+.footer ul li .fa-solid {
+   padding-right: 11px;
+   color: #FFFFFF;
+}
+
+.footer ul li  .espace{
+    margin-right: 9px;
+    padding-left: 1px;
+}
+
+/* Responsive Tablette */
+
+@media screen and (min-width:481px)and (max-width:768px){
+
+header{
+    width: 768px;
+    height: 436px;
+}
+.titre img{
+    left:277px;
+}
+
+.Menu{
+    width: 555px;
+    margin-left: 100px;
+    height: 1173px;
+    margin-top: -56px;
+}
+
+.cta{
+    margin-left: 173px;
+}
+
+.Menu h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Section Footer */
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .details{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .details h4{
+    padding-left: 0px;
+    padding-bottom: 22px;
+}
+
+.container_footer{
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    padding-top: 0px;
+    padding-left: 48px;
+}
+
+.container_footer .services , .politique{
+    display: flex;
+    flex-direction: row;
+    width: 482px;
+    margin-right: 24px;
+}
+
+.container_footer .services ul > li{
+    margin-right: 62px;
+}
+
+.container_footer ul{
+    width: 500px;
+    display: flex;
+    padding-right: 7px;
+}
+
+.container_footer .politique ul >li{
+    margin-right: 7px;
+}
+.footer ul li .fa-solid{
+    padding-right: 3px;
+}
+}
+
+/* Responsive Desktop */
+
+@media screen and (min-width:769px) and (max-width:1440px) {
+header{  width: 1440px;
+height: 736px;
+}
+
+.titre img{
+    left: 615px;
+}
+
+.Menu{
+    width: 1055px;
+    margin-left: 209px;
+    height: 1221px;
+    margin-top: -56px;
+}
+
+.cards-txt{
+    width: 634px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu .container h5{
+    margin-right: 581px;
+}
+
+.cta{
+    margin-left: 423px;
+}
+
+/* Section footer */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer .details{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer .details h4{
+    padding-top: 90px;
+    padding-right: 68px;
+}
+
+.container_footer{
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    align-items: center;
+    justify-content: left;
+    padding-top: 0px;
+    padding-left: 176px;
+    margin-right: 78px;
+}
+
+.container_footer .services , .politique{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    margin-right: 57px;
+}
+
+.container_footer .services ul > li{
+    margin-right: 9px;
+    width: 200px;
+}
+
+.container_footer ul{
+    width: 434px;
+    display: flex;
+}
+
+.container_footer .politique ul >li{
+    margin-right: 15px;
+}
+
+.footer ul li .fa-solid{
+    padding-right: 3px;
+}
+}
+    
